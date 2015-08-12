@@ -12,9 +12,11 @@
  */
 
 //Make sure jQuery has been loaded before app.js
-//if (typeof jQuery === "undefined") {
-//  throw new Error("AdminLTE requires jQuery");
-//}
+// test
+if (typeof jQuery === "undefined" && typeof Meteor === "undefined") {
+  throw new Error("AdminLTE requires jQuery");
+  
+}
 
 /* AdminLTE
  *
