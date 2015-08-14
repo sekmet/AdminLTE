@@ -12,7 +12,6 @@
  */
 
 //Make sure jQuery has been loaded before app.js
-// test
 if (typeof jQuery === "undefined" && typeof Meteor === "undefined") {
   throw new Error("AdminLTE requires jQuery");
   

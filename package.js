@@ -1,8 +1,8 @@
 // package metadata file for Meteor.js
 var packageName = 'yp2:admin-lte';
 var where = 'client'; // where to install: 'client' or 'server'. For both, pass nothing.
-var version = '2.2.1_17';
-var summary = 'Admin-Lte meteor package';
+var version = '2.2.1_19';
+var summary = 'AdminLTE - admin template. Meteor package.';
 var gitLink = 'https://github.com/yp2/AdminLTE';
 var documentationFile = 'README.md';
 
@@ -61,9 +61,9 @@ Package.onUse(function(api) {
 
 
   //app
-  api.addFiles('dist/js/app.js', where);
+  api.addFiles('dist/js/meteorApp.js', where);
 
   //export
-  api.export("$", where);
+  api.export("MeteorAdminLTE", where);
 
 });   
