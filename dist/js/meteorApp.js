@@ -756,7 +756,6 @@ MeteorAdminLTE._todoListCustomPlugin = function ($) {
 
 MeteorAdminLTE.run = function () {
     this._run();
-    console.log(jQuery);
     this._boxRefreshButton(jQuery);
     this._explicitBoxActivation(jQuery);
     this._todoListCustomPlugin(jQuery);

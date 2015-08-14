@@ -66,4 +66,30 @@ Package.onUse(function(api) {
   //export
   api.export("MeteorAdminLTE", where);
 
-});   
+
+  //plugins
+
+  //iCheck
+  api.addFiles('plugins/iCheck/icheck.js', where);
+  api.addFiles('plugins/iCheck/square/_all.css', where);
+  api.addFiles('plugins/iCheck/square/square.png', where);
+  api.addFiles('plugins/iCheck/square/square@2x.png', where);
+  api.addFiles('plugins/iCheck/square/aero.png', where);
+  api.addFiles('plugins/iCheck/square/aero@2x.png', where);
+  api.addFiles('plugins/iCheck/square/blue.png', where);
+  api.addFiles('plugins/iCheck/square/blue@2x.png', where);
+  api.addFiles('plugins/iCheck/square/green.png', where);
+  api.addFiles('plugins/iCheck/square/green@2x.png', where);
+  api.addFiles('plugins/iCheck/square/grey.png', where);
+  api.addFiles('plugins/iCheck/square/grey@2x.png', where);
+  api.addFiles('plugins/iCheck/square/orange.png', where);
+  api.addFiles('plugins/iCheck/square/orange@2x.png', where);
+  api.addFiles('plugins/iCheck/square/pink.png', where);
+  api.addFiles('plugins/iCheck/square/pink@2x.png', where);
+  api.addFiles('plugins/iCheck/square/purple.png', where);
+  api.addFiles('plugins/iCheck/square/purple@2x.png', where);
+  api.addFiles('plugins/iCheck/square/red.png', where);
+  api.addFiles('plugins/iCheck/square/red@2x.png', where);
+  api.addFiles('plugins/iCheck/square/yellow.png', where);
+  api.addFiles('plugins/iCheck/square/yellow@2x.png', where);
+});
