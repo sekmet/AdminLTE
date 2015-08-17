@@ -1,3 +1,23 @@
+Meteor usage
+============
+
+To activate AdminLTE app on template put this code in Template.foo.onRendered:
+```js
+Template.foo.onRendered(function () {
+
+    var self = this;
+    if (self.view.isRendered) {
+        var body = $('body');
+            body.removeClass();
+            body.addClass("skin-blue sidebar-mini");
+
+        $(function () {
+            MeteorAdminLTE.run()
+        });
+    }
+});
+```
+
 Introduction
 ============
 
