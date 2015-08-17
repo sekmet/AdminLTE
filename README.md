@@ -1,5 +1,5 @@
 Meteor usage
-============
+------------
 
 Installation
 ```
@@ -24,7 +24,7 @@ Template.foo.onRendered(function () {
 ```
 
 Meteor AdminLTE bundled plugins
-===============================
+-------------------------------
 
 For now meteor package support only this plugins:
 
