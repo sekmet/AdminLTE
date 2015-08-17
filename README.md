@@ -1,6 +1,11 @@
 Meteor usage
 ============
 
+Installation
+```
+meteor add yp2:admin-lte
+```
+
 To activate AdminLTE app on template put this code in Template.foo.onRendered:
 ```js
 Template.foo.onRendered(function () {
@@ -17,6 +22,13 @@ Template.foo.onRendered(function () {
     }
 });
 ```
+
+Meteor AdminLTE bundled plugins
+===============================
+
+For now meteor package support only this plugins:
+
+- iCheck
 
 Introduction
 ============
