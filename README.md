@@ -23,6 +23,9 @@ Template.foo.onRendered(function () {
 });
 ```
 
+Usage of this package - https://github.com/yp2/intranet
+
+
 Meteor AdminLTE bundled plugins
 -------------------------------
 

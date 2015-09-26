@@ -1,7 +1,7 @@
 // package metadata file for Meteor.js
 var packageName = 'yp2:admin-lte';
 var where = 'client'; // where to install: 'client' or 'server'. For both, pass nothing.
-var version = '2.2.1_20';
+var version = '2.3.1';
 var summary = 'AdminLTE - admin template. Meteor package.';
 var gitLink = 'https://github.com/yp2/AdminLTE';
 var documentationFile = 'README.md';
@@ -27,16 +27,22 @@ Package.onUse(function(api) {
 
   //style
   api.addFiles('dist/css/AdminLTE.css', where);
-  api.addAssets('build/less/AdminLTE.less', where);
+  //api.addAssets('build/less/AdminLTE.less', where);
 
   // skins
   //api.addFiles('dist/css/skins/_all-skins.css', where);
   api.addFiles('dist/css/skins/skin-black.css', where);
+  api.addFiles('dist/css/skins/skin-black-light.css', where);
   api.addFiles('dist/css/skins/skin-blue.css', where);
+  api.addFiles('dist/css/skins/skin-blue-light.css', where);
   api.addFiles('dist/css/skins/skin-green.css', where);
+  api.addFiles('dist/css/skins/skin-green-light.css', where);
   api.addFiles('dist/css/skins/skin-purple.css', where);
+  api.addFiles('dist/css/skins/skin-purple-light.css', where);
   api.addFiles('dist/css/skins/skin-red.css', where);
+  api.addFiles('dist/css/skins/skin-red-light.css', where);
   api.addFiles('dist/css/skins/skin-yellow.css', where);
+  api.addFiles('dist/css/skins/skin-yellow-light.css', where);
 
   //img
   api.addAssets('dist/img/avatar.png', where);
@@ -58,6 +64,13 @@ Package.onUse(function(api) {
   api.addAssets('dist/img/user6-128x128.jpg', where);
   api.addAssets('dist/img/user7-128x128.jpg', where);
   api.addAssets('dist/img/user8-128x128.jpg', where);
+  api.addAssets('dist/img/credit/american-express.png', where);
+  api.addAssets('dist/img/credit/cirrus.png', where);
+  api.addAssets('dist/img/credit/mastercard.png', where);
+  api.addAssets('dist/img/credit/mestro.png', where);
+  api.addAssets('dist/img/credit/paypal.png', where);
+  api.addAssets('dist/img/credit/paypal2.png', where);
+  api.addAssets('dist/img/credit/visa.png', where);
 
 
   //app

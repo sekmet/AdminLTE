@@ -148,6 +148,9 @@ MeteorAdminLTE._run = function () {
     $(function () {
         "use strict";
 
+        //Fix for IE page transitions
+        $("body").removeClass("hold-transition");
+
         //Extend options if external options exist
         if (typeof AdminLTEOptions !== "undefined") {
             $.extend(true,
@@ -323,7 +326,7 @@ MeteorAdminLTE._init = function () {
             var screenSizes = self.AdminLTE.options.screenSizes;
 
             //Enable sidebar toggle
-            $(toggleBtn).on('click', function (e) {
+            $(document).on('click', toggleBtn, function (e) {
                 e.preventDefault();
 
                 //Enable sidebar push menu
@@ -686,18 +689,30 @@ MeteorAdminLTE._explicitBoxActivation = function ($) {
      * EXPLICIT BOX ACTIVATION
      * -----------------------
      * This is a custom plugin to use with the component BOX. It allows you to activate
-     * a box inserted in the DOM after the app.js was loaded.
+     * a box inserted in the DOM after the app.js was loaded, toggle and remove box..
      *
      * @type plugin
      * @usage $("#box-widget").activateBox();
+     *  * @usage $("#box-widget").toggleBox();
+     * @usage $("#box-widget").removeBox();
      */
+     var self = this;
 
     'use strict';
 
     $.fn.activateBox = function () {
-        $.AdminLTE.boxWidget.activate(this);
+        self.AdminLTE.boxWidget.activate(this);
     };
 
+    $.fn.toggleBox = function(){
+        var button = $($.AdminLTE.boxWidget.selectors.collapse, this);
+        self.AdminLTE.boxWidget.collapse(button);
+    };
+
+    $.fn.removeBox = function(){
+        var button = $($.AdminLTE.boxWidget.selectors.remove, this);
+        self.AdminLTE.boxWidget.remove(button);
+    };
 };
 
 MeteorAdminLTE._todoListCustomPlugin = function ($) {
